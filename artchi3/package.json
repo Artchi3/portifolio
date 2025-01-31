@@ -9,10 +9,13 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start ",
+    "start:sass": "react-scripts start npm run compile",
+    "clean":"rm -rf src/build ",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile":"sass --watch --update src/styles/app.scss:src/build/app.css"
   },
   "eslintConfig": {
     "extends": [

@@ -1,12 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import './build/app.css';
+import Header from './models/Header.js';
+import Footer from './models/Footer.js';
+import Timeline from './models/Timeline.js';
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
       <section class="greetings">
+        <div>
           <h1>Olá Mundo</h1>
           <h2>Me chame de <b>Artchi3</b>, <p>Desenvolvedor Front-End</p></h2>
+        </div>
       </section>
       <section class="aboutme">
           <div class="aboutme-txt">
@@ -21,6 +27,7 @@ function App() {
       </section>
       <section class="projects">
           <img src="costeladeadao" alt=""/> 
+          <Timeline></Timeline>
       </section>
       <section class="socials">
           <div class="moreofme">
@@ -65,6 +72,7 @@ function App() {
               </a> 
           </div>
       </section> 
+      <Footer></Footer>
     </div>
   );
 }

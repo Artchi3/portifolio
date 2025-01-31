@@ -1,9 +1,8 @@
- 
-import './App.css';
+// import './App.css';
 
 function App() {
   return ( 
-    <header className="App-header">
+    <header className="my-header">
         <p>Artchi3</p>
         <ul className='menu'>
             <li>Contato</li>

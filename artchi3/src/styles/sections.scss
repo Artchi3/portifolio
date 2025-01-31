@@ -1,0 +1,52 @@
+section{
+    width: 100%;
+    height: 856px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.greetings{
+    background: linear-gradient(180deg, rgba(215,134,71,0.6573426573426573) 0%, rgba(44,64,39,0.8787878787878788) 99%);
+    position: relative;
+    div{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 10px;
+        top: 20%;
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 65px;
+        font-weight: 600;
+        text-align: left;
+    }
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: left;
+        b{
+            font-size: 45px;
+        }
+        p::after, p::before{
+            content: '>';
+            display: block;
+        }
+        p::before{ 
+            transform: rotate(180deg);
+        }
+
+    }
+}
+.aboutme-images{
+    img{
+        width: 500px;height: 500px;
+    }
+}
