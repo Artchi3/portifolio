@@ -1,0 +1,33 @@
+@mixin headingMax {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 65px;
+}
+@mixin headingMin {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 45px;
+}
+@mixin textBasis {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 15px;
+}
+@mixin flex-Rcenter{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+@mixin flex-Rleft{
+    display: flex;
+    flex-direction: row; 
+    justify-content: left;
+}
+@mixin flex-Ccenter{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}

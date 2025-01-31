@@ -84,6 +84,14 @@ table {
   text-align: center;
 }
 
+footer {
+  background: linear-gradient(180deg, rgba(42, 16, 17, 0.85) 0%, rgba(42, 16, 17, 0.95) 35%, rgb(42, 16, 17) 75%);
+  width: 100%;
+  height: auto;
+  padding: 10px 50px;
+  border: 1px solid yellowgreen;
+}
+
 .App {
   text-align: center;
   width: 100%;
@@ -92,6 +100,10 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .App-logo {
@@ -134,10 +146,11 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0px 100px;
 }
 
 .greetings {
-  background: linear-gradient(180deg, rgba(215, 134, 71, 0.6573426573) 0%, rgba(44, 64, 39, 0.8787878788) 99%);
+  background: linear-gradient(180deg, rgba(237, 203, 129, 0.85) 0%, rgba(215, 134, 71, 0.85) 70%);
   position: relative;
 }
 .greetings div {
@@ -146,37 +159,132 @@ section {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  left: 10px;
-  top: 20%;
+  left: 100px;
+  top: 30%;
   width: 100%;
   height: auto;
+  max-width: 500px;
 }
 .greetings h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 65px;
   font-weight: 600;
   text-align: left;
+  font-size: 65px;
 }
 .greetings h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 25px;
   font-weight: 400;
   text-align: left;
+  font-size: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 30px;
+  align-items: flex-end;
+  position: relative;
+  margin: 10px 10px 10px 40px;
+  width: auto;
+}
+.greetings h2 b, .greetings h2 p {
+  width: auto;
+  height: auto;
+  display: flex;
 }
 .greetings h2 b {
   font-size: 45px;
+  padding: 2px 0px 0px 8px;
+}
+.greetings h2 p {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  font-size: 22px;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
 }
 .greetings h2 p::after, .greetings h2 p::before {
   content: ">";
   display: block;
+  font-size: 40px;
 }
 .greetings h2 p::before {
   transform: rotate(180deg);
 }
 
-.aboutme-images img {
+.aboutme {
+  background: linear-gradient(180deg, rgba(215, 134, 71, 0.85) 0%, rgba(215, 134, 71, 0.85) 41%, rgba(44, 64, 39, 0.8519782913) 67%);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+.aboutme .aboutme-txt {
   width: 500px;
-  height: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutme .aboutme-txt h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 45px;
+  margin: 100px 0 10px 0;
+}
+.aboutme .aboutme-txt p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  font-size: 15px;
+  text-align: justify;
+}
+.aboutme .aboutme-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+  right: 5%;
+  top: -60%;
+}
+.aboutme .aboutme-images .images {
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.aboutme .aboutme-images .images.img1 {
+  top: 0;
+  left: 100px;
+  z-index: 2;
+}
+.aboutme .aboutme-images .images.img2 {
+  top: 200px;
+  left: -80px;
+  z-index: 1;
+}
+.aboutme .aboutme-images .images.img3 {
+  top: 280px;
+  left: 185px;
+  z-index: 0;
+}
+.aboutme .aboutme-images img {
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+}
+
+.projects {
+  background: linear-gradient(180deg, rgba(44, 64, 39, 0.85) 0%, rgba(44, 64, 39, 0.85) 70%);
+  position: relative;
+}
+
+.socials {
+  background: linear-gradient(180deg, rgba(44, 64, 39, 0.85) 0%, rgba(42, 16, 17, 0.85) 85%);
+  position: relative;
 }
 
 /*# sourceMappingURL=app.css.map */
