@@ -241,6 +241,17 @@ section {
   font-size: 15px;
   text-align: justify;
 }
+.aboutme .aboutme-txt label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  font-size: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.aboutme .aboutme-txt label b {
+  font-weight: 600;
+}
 .aboutme .aboutme-images {
   display: flex;
   flex-direction: column;
@@ -280,6 +291,13 @@ section {
 .projects {
   background: linear-gradient(180deg, rgba(44, 64, 39, 0.85) 0%, rgba(44, 64, 39, 0.85) 70%);
   position: relative;
+  padding: 0;
+}
+.projects .costeladeadao {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 
 .socials {

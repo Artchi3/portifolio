@@ -81,6 +81,14 @@ section{
             @include textBasis;
             text-align: justify
         }
+        label{
+            @include textBasis;
+            font-size: 20px;
+            margin-top: 20px;
+            b{
+                font-weight: 600
+            }
+        }
     }
     .aboutme-images{ 
         @include flex-Ccenter;
@@ -119,6 +127,13 @@ section{
 .projects{
     background: linear-gradient(180deg, rgba(44,64,39,0.85) 0%, rgba(44,64,39,0.85) 70%);
     position: relative;
+    padding: 0;
+    .costeladeadao{
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
 }
 .socials{
     background: linear-gradient(180deg, rgba(44,64,39,0.85) 0%, rgba(42,16,17,0.85) 85%);
